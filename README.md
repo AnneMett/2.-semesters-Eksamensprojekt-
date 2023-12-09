@@ -1,2 +1,7 @@
 # 2.-semesters-Eksamensprojekt-
-multimediedesign 2. semester - eksamensprojekt. Gruppeeksamen om Efterskolen Ådalen
+Erhvervsakademi Aarhus
+Multimediedesign 2. semester eksamensprojekt. 
+
+Gruppeeksamen om Efterskolen Ådalen. 
+Gruppemedlemmer: 
+Anne-Mette Larsen, Nikoline Faaborg & Philip Kønigsfeldt
