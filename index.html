@@ -1,10 +1,13 @@
 <!DOCTYPE html>
-<html lang="da">
+<html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
     <script src="scipt.js" defer></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Gilda+Display&family=Montserrat:wght@400;700&display=swap" rel="stylesheet">
     
     <!-- <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">  
         hvis vi vil have et lille ikon i browseren :) -->
@@ -13,11 +16,69 @@
 </head>
 <body>
     <header>
+        <nav id="laptopNav">
+            <img id="logo" src="images/logo stor 1.svg" alt="Logo">
+            <img src="images/Line 5.png" alt="Linje">
+            <a href="#">Om skolen</a>
+            <a href="#">Linjefag</a>
+            <a href="#">Undervisning</a>
+            <a href="#">Livet på skolen</a>
+            <a href="#" class="knap1">Besøg skolen</a>
+        </nav>
+
+        <nav id="mobilNav">
+            <img src="images/logo stor 1.svg" alt="Logo">
+
+        </nav>
 
     </header>
 
     <main>
+        <div class="videopladsholder">
+            <video autoplay muted loop src="images/IMG_6718.MOV">
+            </video>
+            <div class="landing">
+                <h1>Efterskolen Ådalen</h1>
+                <p>En kreativ og boglig efterskole</p>
+                <a href="#" class="knap2">Besøg skolen</a>
+            </div>
+        </div>
 
+        <section class="brødtekst">
+            <p>Efterskolen Ådalen er en kreativ efterskole med et fantastisk nærvær mellem engagerede lærere og cirka 110 elever. Vælg mellem linjefagene billedkunst, drama, eSport, musik og sport. 
+                Du udvikler dig fagligt, kreativt og personligt og får venner for livet. 
+                Efterskolen Ådalen ligger naturskønt, tæt på Aarhus i Midtjylland.  
+                <a href="#">Læs mere</a>
+            </p>
+        </section>
+
+        <div class="centerKnap">
+        <a href="#" class="knap2">Lær skolen at kende på 3 minutter</a>
+        </div>
+
+        <section class="sectionMKort">
+            <h2>Linjefag på Ådalen</h2>
+            <div class="linjefagsikoner">
+                <img src="icons/billedkunst.png" alt="Billedkunst ikon">
+                <img src="icons/drama.png" alt="Drama ikon">
+                <img src="icons/essport.png" alt="Esport ikon">
+                <img src="icons/sport.png" alt="Sport ikon">
+                <img src="icons/musik.png" alt="Musik ikon">
+            </div>
+            <div class="billedeKort">
+                <div>
+                    
+                    <div></div>
+                </div>
+                <div>
+                    <div></div>
+                </div>
+                <div>
+                    <div></div>
+                </div>
+            </div>
+            <a href="#">Tilmeld dig besøgsdag</a>
+        </section>
     </main>
 
     <footer>
