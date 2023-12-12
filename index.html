@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
-    <script src="scipt.js" defer></script>
+    <script src="script.js" defer></script>
     <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Gilda+Display&family=Montserrat:wght@400;700&display=swap" rel="stylesheet">
@@ -80,48 +80,179 @@
             <!-- en div til at holde kortene, end div til at bestemme str. på kort, 
                 en div med baggrundbillede og height auto så de er responsive, og en sidste div med text og ikon. puha-->
            <div class="kortContainer">
-            <div class="billedeKort">
+            <a href="#" class="billedeKort billedkunst">
                <div class="linjefagKort">
-                    <div class="kortInfo">
-
-                    </div>
-               </div>
+                    <h3>Billedkunst</h3>
+                    <img src="icons/billedkunst.png" class="linjefagsikoner ikon" alt="ikon">
             </div>
 
-            <div class="billedeKort">
+            </a>
+            <a href="#" class="billedeKort drama">
                 <div class="linjefagKort">
-                    <div class="kortInfo">
-                        
-                    </div>
+                        <h3>Drama</h3>
+                        <img src="icons/drama.png" class="linjefagsikoner ikon" alt="ikon">
                 </div>
-             </div>
-             
-             <div class="billedeKort">
+            </a>
+
+            <a href="#"class="billedeKort esport">
                 <div class="linjefagKort">
-                    <div class="kortInfo">
-
-                    </div>
+                        <h3>Esport</h3>
+                        <img src="icons/essport.png" class="linjefagsikoner ikon" alt="ikon">
                 </div>
-             </div>
+            </a>
 
-             <div class="billedeKort">
+            <a href="#" class="billedeKort sport">
                 <div class="linjefagKort">
-                    <div class="kortInfo">
-
-                    </div>
+                        <h3>Sport</h3>
+                        <img src="icons/sport.png" class="linjefagsikoner ikon" alt="ikon">
                 </div>
-             </div>
+             </a>
 
-             <div class="billedeKort">
-                <div class="linefagKort">
-                    <div class="kortInfo">
-
-                    </div>
+            <a href="#" class="billedeKort musik">
+                <div class="linjefagKort">
+                        <h3>Musik</h3>
+                        <img src="icons/musik.png" class="linjefagsikoner ikon" alt="ikon">
                 </div>
-             </div>
-           </div>
-            <a href="#" class="knap1">Tilmeld dig besøgsdag</a>
+            </a>
+        </div>
         </section>
+
+        <!------------ knap ------------>
+        <div class="centerKnap">
+            <a href="#" class="knap1">Tilmeld dig besøgsdag</a>
+        </div>
+
+
+        <!---------------------------- Bloggen---------------------->
+<section class="bloggen">
+
+    <h2>Nyt fra bloggen</h2>
+
+    <div class="blog" aria-label=" Newest photos"> 
+
+        <div class="carousel" data-carousel>
+            <button class="carousel-button prev" data-carousel-button="prev">&#60;</button>
+            <button class="carousel-button next" data-carousel-button="next">&#62;</button>
+
+        <ul data-slides>
+            <li class="slide" data-active>
+                <img src="images/billedkunstlinje.png" alt="billedkunst">
+            </li>
+            <li class="slide">
+                <img src="images/dramalinje.png" alt="drama">
+            </li>
+            <li class="slide">
+                <img src="images/sportlinje.png" alt="sport">
+            </li>
+        </ul>
+    </div>
+</div>
+</section>
+
+
+<!---------------------- efterskolernes aften og besøgsdag kort -------------->
+<div class="besøg kortContainer">
+    <div class="besøgsKort besøgsdag">
+        <div class="linjefagKort">
+                <h3>Besøgsdag på Efterskolen Ådalen</h3>
+                <a href="#" class="knap2">Læs mere</a>
+        </div>
+    </div>
+
+    <img src="images/Line 5.png" alt="">
+
+    <div class="besøgsKort efterskolernesAften">
+        <div class="linjefagKort">
+                <h3>Efterskolernes Aften <br> 10. januar 2024 </h3>
+                <a href="#" class="knap2">Læs mere</a>
+        </div>
+    </div>
+</div>
+
+<!--------------- knap om skolen ------------->
+
+<div class="centerKnap">
+    <a href="#" class="knap1">Om Skolen</a>
+</div>
+
+<!---------------- citater fra gamle elever ---------------->
+
+<section class="gamleElever">
+
+    <h2>Citater fra gamle elever</h2>
+
+<div class="elevContainer">
+<div class="LasseOgMia">
+    <img src="images/lasse.jpg" alt="">
+    <h3>Mia Iversen</h3>
+    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. 
+        Aut doloremque quam labore quas quibusdam maxime illo numquam ut 
+        reprehenderit quia commodi enim blanditiis magni aspernatur repellat ipsam, 
+        voluptate ullam et!</p>
+</div>
+
+<div class="LasseOgMia">
+    <h3>Lasse Sørensen</h3>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+        Aliquid a aut tempora esse enim, nostrum cum praesentium deserunt autem 
+        provident quod ab velit architecto harum dignissimos sunt eius officia. Vitae. </p>
+        <h4>"citat her"</h4>
+        <p>hvem sagde det</p>
+
+        <img src="images/mia.jpg" alt="">
+    </div>
+    </div>
+</section>
+
+<section class="tilmeldingContainer">
+    <div class="tilmelding">
+
+
+    <h4>Tilmelding</h4>
+    <p>Vi har fået en ledig plads i dette skoleår. Kontakt os, hvis du er interesseret. 
+        Ring 87 68 22 00 i kontorets åbningstid eller skriv til os på aadalen@efterskolen-aadalen.dk. 
+        Vi glæder os til at møde dig.</p>
+        <a class="knap1">Tilmed dig besøgsdag</a>
+</div>
+</section>
+
+<section class="instaContainer">
+<h2>Følg med på Instagram</h2>
+<a href="#">@EfterskolenAAdalen</a>
+
+<div>
+    <img src="" alt="">
+    <img src="" alt="">
+    <img src="" alt="">
+    <img src="" alt="">
+    <img src="" alt="">
+    <img src="" alt="">
+    <img src="" alt="">
+    <img src="" alt="">
+    <img src="" alt="">
+    <img src="" alt="">
+    <img src="" alt="">
+    <img src="" alt="">
+    <img src="" alt="">
+    <img src="" alt="">
+    <img src="" alt="">
+</div>
+
+</section>
+    
+
+
+
+
+
+
+
+
+
+
+
+
+
     </main>
 
     <footer>
