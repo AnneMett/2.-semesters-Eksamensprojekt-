@@ -444,9 +444,31 @@ video{
 
 .tilmelding p{
     text-align: center;
+}
+
+
+/* ----------------- Instagram sektion ---------------- */
+
+
+.instaContainer{
+ height: auto;
+ background-color: aqua;
+}
+
+
+.instaGrid{
+    display: grid;
+    grid-template-columns: auto auto auto auto auto;
+    padding: 2%;
+    max-width: 100%;
 
 }
 
+.grid-item{
+    border-radius: 15px;
+    padding: 2%;
+    max-width: 200px;
+}
 
 /*----------------------------------------Mobil---------------------------------*/
 
