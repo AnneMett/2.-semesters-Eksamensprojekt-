@@ -3,55 +3,57 @@
     padding: 0;
 }
 
+/* Styletile men css basically - 
+så vi nemt kan ændre uden at skal rode efter det hele*/
+:Root{
+   
+    --font-size-primary: 2vw;
+    --font-size-secondary:  1.3vw;  
+    --font-primary: 'montserrat', sans-serif;
+    --font-secondary: 'Gilda Display', serif;
+    --text-primary: #ffffff ;
+    --text-secondary:#000000 ;
+    --bg-primary: #000000;
+    --bg-secondary:   rgba(0, 0, 0, 0.60); /* overlay effekt */
+    --bg-accent: #fba808;
+}
+
+
+/* ---------------------------- basics --------------------------*/
 body{
     background-color: black;
+   }
 
-}
-
-#logo{
-    height: auto;
-    width: 100%;
-    max-width: 300px;
-}
-
-#laptopNav a{
-    text-decoration: none;
-    color: white;
-    font-weight: bold;
-    font-size: 1.2vw;
-}
-
-.knap1{
-    background-color: #fba808;
-    padding: 1%;
-    border-radius: 5px;
-    color: black !important;
-}
-
-
-.videopladsholder{
-    height: 100%;
-    position: relative;
-    z-index: 0;
-}
-
-video{
-    width: 100%;
-}
-
-.landing{
-    color: white;
-}
 
 h1{
     font-family: 'montserrat', sans-serif;
     font-size: 5vw;
 }
 
-.landing p{
-    font-size: 2vw;
-    font-family: 'montserrat', sans-serif;
-    margin-bottom: 5%;
+h2{
+    font-family: var(--font-primary);
+    font-size: var(--font-secondary);
+    border-left: solid 3px var(--bg-accent);
+    margin: 0 33%;
+    text-align: center;
+    margin-top: 5%;
+}
+
+h3{
+    font-family: var(--font-primary);
+}
+
+p{
+    font-family: var(--font-primary);
+    color: var(--text-primary);
+}
+
+/* ----------------------- knapper --------------------------------- */
+.knap1{
+    background-color: #fba808;
+    padding: 1%;
+    border-radius: 5px;
+    color: black !important;
 }
 
 .knap2{
@@ -64,6 +66,51 @@ h1{
     color: white;
     text-decoration: none;
     font-family: 'montserrat', sans-serif;
+}
+
+.centerKnap{
+    display: flex;
+    justify-content: center;
+}
+
+
+/* ---------------------------- nav bar --------------------*/
+
+#laptopNav a{
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+    font-size: 1.2vw;
+}
+
+#logo{
+    height: auto;
+    width: 100%;
+    max-width: 300px;
+}
+
+/* -------------------------------- landing ------------------------------- */
+.landing{
+    color: white;
+}
+
+
+.landing p{
+    font-size: 2vw;
+    font-family: 'montserrat', sans-serif;
+    margin-bottom: 5%;
+}
+
+
+.videopladsholder{
+    height: 100%;
+    position: relative;
+    z-index: 0;
+}
+
+video{
+    width: 100%;
+    height: auto;
 }
 
 .brødtekst{
@@ -84,12 +131,14 @@ h1{
     border-left: 3px solid #fba808;
 }
 
-.centerKnap{
-    display: flex;
-    justify-content: center;
-}
 
-.sectionMKort h2{
+/* ------------------------------ linjefag ----------------------------------- */
+
+.sectionMKort h2{  
+    
+    /* kan det ikke bare være h2 generelt? for der er mange overskrifter med orange linje,
+    og så kan vi bruge h3 som overskriften uden linjen? */
+
     color: white;
     font-family: 'montserrat', sans-serif;
     font-size: 3vw;
@@ -109,7 +158,7 @@ h1{
 
 
 
-/*-------------Mobil----------*/
+/*----------------------------------------Mobil---------------------------------*/
 
 @media screen and (max-width: 780px) {
     #laptopNav{
@@ -134,7 +183,7 @@ h1{
     }
 }
 
-/*-------------Laptop----------*/
+/*----------------------------------------------Laptop------------------------------------*/
 
 @media screen and (min-width: 780px) {
     #laptopNav{
