@@ -7,8 +7,8 @@
 så vi nemt kan ændre uden at skal rode efter det hele*/
 :Root{
    
-    --font-size-primary: 2vw;
-    --font-size-secondary:  1.3vw;  
+    --font-size-primary: 3vw;
+    /* --font-size-secondary:  1.2vw;  */
     --font-primary: 'montserrat', sans-serif;
     --font-secondary: 'Gilda Display', serif;
     --text-primary: #ffffff ;
@@ -46,6 +46,13 @@ h3{
 p{
     font-family: var(--font-primary);
     color: var(--text-primary);
+}
+
+a{
+    font-family: var(--font-primary);
+    color: var(--text-primary);
+    text-decoration: none;
+   
 }
 
 /* ----------------------- knapper --------------------------------- */
@@ -156,6 +163,18 @@ video{
     margin: 2% 10%;
 }
 
+
+.kortContainer{
+    /* en container til alle kortene */
+    width: 100%;
+    max-height: 
+}
+
+.linjefagKort{
+    /* en til at bestemme str. på kort - for eksempel*/
+    max-height: 500px;
+    max-width: 300px;
+}
 
 
 /*----------------------------------------Mobil---------------------------------*/
