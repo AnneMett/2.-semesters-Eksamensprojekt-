@@ -19,3 +19,6 @@ buttons.forEach((button) => {
     slides.children[newIndex].setAttribute("data-active", "true");
   });
 });
+
+
+
