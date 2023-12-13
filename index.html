@@ -7,7 +7,7 @@
     <script src="script.js" defer></script>
     <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Montserrat&family=Playfair+Display&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&family=Playfair+Display&display=swap" rel="stylesheet">
     
     <!-- <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">  
         hvis vi vil have et lille ikon i browseren :) -->
@@ -41,7 +41,7 @@
             <div class="landing">
                 <h1>Efterskolen Ådalen</h1>
                 <p>En kreativ og boglig efterskole</p>
-                <a href="#" class="knap2">Besøg skolen</a>
+                <a href="#" class="knap2" id="">Besøg skolen</a>
             </div>
         </div>
 
@@ -128,6 +128,8 @@
 
     <h2>Nyt fra bloggen</h2>
 
+    <!--bliver brugt javascript til at lave en bilelde carousel. 
+        ref video:https://www.youtube.com/watch?v=9HcxHDS2w1s  -->
     <div class="blog" aria-label=" Newest photos"> 
 
         <div class="carousel" data-carousel>
@@ -159,7 +161,6 @@
         </div>
     </div>
 
-    <img src="images/Line 5.png" alt="">
 
     <div class="besøgsKort efterskolernesAften">
         <div class="linjefagKort">
@@ -183,30 +184,52 @@
 
 <div class="elevContainer">
 <div class="LasseOgMia">
-    <img src="images/lasseborder.png" alt="">
+    <img src="images/lasse3.png" alt="">
 
 
 <div class="column1">
     <h3>Lasse Sørensen</h3>
     <p>Andre ser ikke nødvendigvis verden, som jeg gør, og vi behøver ikke være enige om det. Det har jeg blandt andet lært ved at snakke med så mange forskellige mennesker og også i Studie10, hvor vi har haft psykologi og filosofi.
 
-       <br> <br> I løbet af efterskoleåret har jeg udviklet mig socialt, jeg er blevet meget mere imødekommende over for fremmede – det er man simpelthen tvunget til på efterskolen</p>
+       <br> <br> I løbet af efterskoleåret har jeg udviklet mig socialt, jeg er blevet meget mere imødekommende over for fremmede – det er man simpelthen tvunget til på efterskolen <br> <br></p>
+       <h4>"I begyndelsen var jeg bange for, hvad andre tænkte, men jeg har lært, at jeg er god nok."</h4>
+       <p>Lasse Sørensen, 9. klasse, årgang 21/22 <br> <br> </p>
 </div>
 </div>
-
-<div class="LasseOgMia">
+<!-- to versioner - en til laptop og en til mobil, bliver hidden i media query. -->
+<div class="LasseOgMia" id="laptopVersion"> 
     <div class="column2">
     <h3>Mia Iversen</h3>
     <p>Jeg er kommet ud af min komfort-zone gennem Studie10, hvor vi har holdt offentlig tale inde i Aarhus – og blevet kastet ud i alt muligt forskelligt. Jeg er også blevet mere åben. Jeg kommer fra Samsø, så jeg har haft i alt 10 venner i mit liv, men her på efterskolen har jeg vænnet mig til at være social hele tiden.
         <br> <br> Jeg har også altid haft en indre dramatiker, der ikke er sprunget ud før her på efterskolen – men nu farver jeg hår og går i sjovt tøj. Jeg tør være mig selv. <br> <br> </p>
         <h4>"Efterskolen har også lært mig, at man aldrig skal dømme nogen, for du kender dem ikke."</h4>
-        <p>Mia Iversen, studie10, årgang 20/21</p>
+        <p>Mia Iversen, studie10, årgang 20/21 <br> <br></p>
     </div>
 
-        <img src="images/miaborder.png" alt="">
+        <img src="images/mia3.png" alt="">
     </div>
+
+    <div class="LasseOgMia" id="mobilVersion">
+          <img src="images/mia3.png" alt=""> 
+          
+        <div class="column2">
+         <h3>Mia Iversen</h3>
+            <p>Jeg er kommet ud af min komfort-zone gennem Studie10, hvor vi har holdt offentlig tale inde i Aarhus – og blevet kastet ud i alt muligt forskelligt. Jeg er også blevet mere åben. Jeg kommer fra Samsø, så jeg har haft i alt 10 venner i mit liv, men her på efterskolen har jeg vænnet mig til at være social hele tiden.
+            <br> <br> Jeg har også altid haft en indre dramatiker, der ikke er sprunget ud før her på efterskolen – men nu farver jeg hår og går i sjovt tøj. Jeg tør være mig selv. <br> <br> </p>
+            <h4>"Efterskolen har også lært mig, at man aldrig skal dømme nogen, for du kender dem ikke."</h4>
+            <p>Mia Iversen, studie10, årgang 20/21</p>
+        </div>
+    
+         
+        </div>
+        </div>
+
+
+
     </div>
 </section>
+
+<!---------------- Tilmeldings sektion ---------------->
 
 <section class="tilmeldingContainer">
     <div class="tilmelding">
@@ -216,16 +239,18 @@
     <p>Vi har fået en ledig plads i dette skoleår. Kontakt os, hvis du er interesseret. 
         Ring 87 68 22 00 i kontorets åbningstid eller skriv til os på aadalen@efterskolen-aadalen.dk. 
         Vi glæder os til at møde dig.</p>
-        <a class="knap1">Tilmed dig besøgsdag</a>
+        <a class="knap1">Tilmeld dig besøgsdag</a>
 </div>
 </section>
 
+
+<!---------------- instagram sektion ---------------->
 <section class="instaContainer">
     <h2>Følg med på Instagram</h2>
     <a href="#">@EfterskolenAAdalen</a>
 
     <div class="kunBilleder">
-    <div class="instaGrid">
+    <div class="instaGrid"> <!-- der biver brugt flexbox og grid-->
         <img src="images/1.jpg" class="grid-item"alt="">
         <img src="images/2.jpg" class="grid-item"alt="">
         <img src="images/3.jpg" class="grid-item"alt="">
@@ -257,14 +282,16 @@
 
     </main>
 
+
+    <!---------------- footeren ---------------->
     <footer>
         
         <div class="footerLogo">
             <img src="images/logo stor 1.svg" alt="logo">
         </div>
 
-        <div class="footerContainer">
-        <div class="venstreSide">
+        <div class="footerContainer"> <!-- to colonner en til venstre og en til højre-->
+        <div class="venstreSide"> 
 
             <a href="#" class="knap1">Besøg skolen</a>
 

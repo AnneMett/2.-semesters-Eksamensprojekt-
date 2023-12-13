@@ -45,8 +45,7 @@ h2{
     font-size: 3vw;
     border-left: solid 3px var(--bg-accent);
     color: var(--text-primary);
-    margin: 0 33%;
-    text-align: center;
+       text-align: center;
     margin-top: 5%;
 }
 
@@ -79,14 +78,13 @@ a{
 .knap1{
     background-color: #fba808;
     padding: 1%;
-    border-radius: 5px;
     color: black !important;
+    border: 4px solid black;
 }
 
 .knap2{
     background-color: rgba(0, 0, 0, 0.60);
     border-color: #fba808;
-    border-radius: 15px;
     border-width: 3px;
     border-style: solid;
     padding: 1% 3%;
@@ -98,6 +96,7 @@ a{
 .centerKnap{
     display: flex;
     justify-content: center;
+    text-align: center;
 }
 
 
@@ -124,7 +123,6 @@ a{
 
 
 .landing p{
-    font-size: 2vw;
     font-family: 'montserrat', sans-serif;
     margin-bottom: 5%;
 }
@@ -251,16 +249,6 @@ video{
     background-position: cover;
 } 
 
-
- .centerKnap .knap1{
-    width: 250px;
-    height: 25px;
-    font-weight: bold;
-    font-size: 1.2vw;
-    margin-top: 2%;
-    padding-left:2.7%;
-    margin-bottom: 4%;
-}
 
 
 
@@ -410,44 +398,6 @@ video{
     padding-top: 0.5%;
 }
 
-.elevContainer{
-    display: flex;
-    flex-direction: row;
-    padding: 2%;
-    justify-content: center;
-    height: auto;
-}
-
-.LasseOgMia{
-    width: 40%;
-    padding: 0 1.5%; /*luft i siderne*/
-}
-
-.LasseOgMia img{
-    border-radius: 15px;
-}
-
- .column1{
-    padding-left: 10%;
-    max-width: 400px;
- }
-
- .column2{
-    padding-top: 15%;
-    max-width: 480px;
- }
-
- .LasseOgMia h3{
-    margin: 4% 0 3% 0;
- }
-
- .LasseOgMia h4{
-    font-size: 2vw;
-    font-family: var(--font-secondary);
-    margin: 2% 0 2% 0;
-    font-style: italic;
- }
-
 
 
 /* ---------------- Tilmeldings sektion --------- */
@@ -455,24 +405,15 @@ video{
 .tilmeldingContainer{
     display: flex;
     justify-content: center;
-    margin-top: 7%;
-}
-
-.tilmelding{
-    width: 50vw;
-    height:30vh;
-    display: flex;
-    justify-content: center;
-    flex-direction: column;
-    align-items: center;
-    border-radius: 15px;
-    border: 4px solid var(--bg-accent);
-    padding: 0 10%;
-    gap: 5%;
+    margin: 7% 0;
 }
 
 .tilmelding p{
     text-align: center;
+}
+
+.tilmelding .knap1{
+    font-weight: bold;
 }
 
 
@@ -488,32 +429,7 @@ video{
     margin-bottom: 2%;
 }
 
-.kunBilleder{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    margin-top: 1%;
-}
 
-
-.instaGrid{
-    display: grid;
-    grid-template-columns: auto auto auto auto auto;
-    max-width: 100%;
-    row-gap: 2%;
-    column-gap: 2%;
-    justify-content: center;
-
-}
-
-.grid-item{
-    border-radius: 15px;
-    padding: 2%;
-}
-
-.instaGrid img{
-    max-width: 180px;
-}
 
 
 
@@ -565,8 +481,8 @@ footer{
 
 .venstreSide{
     display: flex;
-    flex-direction: column;
     justify-content: space-between;
+    flex-direction: column;
     line-height: 2;
     border-left: 3px solid var(--bg-accent);
     padding-left: 3%;
@@ -595,8 +511,8 @@ footer{
 
 .højreSide{
     display: flex;
-    flex-direction: column;
     justify-content: space-around;
+    flex-direction: column;
     line-height: 2;
 }
 
@@ -616,6 +532,39 @@ footer{
         display: block;
     }
 
+    .knap1, .knap2, .centerknap a{
+        font-size: 12pt;
+        border-radius: 15px;
+    }
+    
+
+    .centerKnap .knap1{
+        width: 40%;
+        height: auto;
+        font-weight: bold;
+        margin-top: 2%;
+        padding: 3% 2.5%;
+        margin-bottom: 4%;
+    }
+
+    h1{
+        font-size: 20pt;
+    }
+    
+    h2{
+        font-size: 16pt;
+        height: 10%;
+        margin: 0 12%;
+    }
+
+    h3{
+        font-size: 3.5vw;
+    }
+
+    p{
+        font-size: 10pt;
+    }
+
     .landing{
        position: relative;
        margin: 3% 0 0 5%;
@@ -623,6 +572,10 @@ footer{
 
     .landing p{
         margin-bottom: 3%;
+    }
+    
+    .videopladsholder{
+        flex-direction: column;
     }
 
     .linjefagsikoner img{
@@ -640,14 +593,133 @@ footer{
         width: 250px;
     }
 
-    h3{
-        font-size: 3.5vw;
-    }
+ 
 
     .ikon{
         width: 50px;
         height: 50px;
     }
+
+/* instagram sektion */
+
+.kunBilleder{
+    flex-wrap: wrap;
+}
+
+
+
+ /* footer */
+     .footerContainer{
+      display: flex;
+      width: 100%;
+     justify-content: space-around;
+     flex-direction: column;
+}
+
+footer{
+    margin: 0 2% 2% 2%;
+}
+/* gamle elev sektion */
+.elevContainer{
+    display: flex;
+    flex-direction: column;
+    padding: 5%;
+    justify-content: center;
+    height: auto;
+}
+
+#mobilVersion{
+    display:block;
+}
+
+#laptopVersion{
+    display: none;
+}
+
+.LasseOgMia{
+    width: 100%;
+    padding: 0 1.5%; /*luft i siderne*/
+}
+
+.LasseOgMia img{
+    border-radius: 15px;
+    width: 100%;
+}
+
+ .LasseOgMia h3{
+    margin: 4% 0 3% 0;
+    text-align: center;
+ }
+
+ .LasseOgMia h4{
+    font-size: 16pt;
+    font-family: var(--font-secondary);
+    margin: 2% 0 2% 0;
+    font-style: italic;
+ }
+
+ .column1, .column2{
+    margin: 0 6%;
+ }
+
+ /* tilmeldingssektion */
+
+ .tilmelding{
+    width: 80%;
+    height:auto;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    border-radius: 15px;
+    border: 4px solid var(--bg-accent);
+    padding: 5% 10%;
+    margin: 5%;
+    gap: 5%;
+}
+
+.tilmelding h4{
+    font-size: 20pt;
+}
+
+.tilmelding .knap1{
+    font-weight: bold;
+    padding: 2% 4%;
+    margin-top: 5%;
+}
+
+
+
+/* instagram sektion */
+
+.kunBilleder{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 1%;
+    margin-bottom: 10%;
+}
+
+
+.instaGrid{
+    display: grid;
+    grid-template-columns: auto auto auto;
+    max-width: 100%;
+    row-gap: 2%;
+    column-gap: 2%;
+    justify-content: center;
+
+}
+
+.grid-item{
+    border-radius: 15px;
+    padding: 2%;
+}
+
+.instaGrid img{
+    max-width: 100px;
+}
+
 }
 
 /*----------------------------------------------Laptop------------------------------------*/
@@ -669,6 +741,30 @@ footer{
         padding: 0 5%;
     }
 
+     .knap1, .knap2, .cetnerknap a{
+        font-size: 1.2vw;
+        border-radius: 15px;
+     }
+
+     h2{
+        margin: 0 33%;
+     }
+
+     p{
+         font-size: 2vw;
+     }
+
+     
+ .centerKnap .knap1{
+    width: 250px;
+    height: 25px;
+    font-weight: bold;
+    margin-top: 2%;
+    padding-left:2.7%;
+    margin-bottom: 4%;
+}
+
+
     .landing{
         position: absolute;
         top: 45%;
@@ -678,4 +774,98 @@ footer{
     .linjefagsikoner img{
         height: 80px;
     }
+
+    /* gamle elev sektion */
+
+    .elevContainer{
+        display: flex;
+        flex-direction: row;
+        padding: 2%;
+        justify-content: center;
+        height: auto;
+    }
+
+    #mobilVersion{
+        display:none;
+    }
+    
+    #laptopVersion{
+        display: block;
+    }
+
+    .LasseOgMia{
+        width: 40%;
+        padding: 0 1.5%; /*luft i siderne*/
+    }
+    
+    .LasseOgMia img{
+        border-radius: 15px;
+    }
+    
+     .column1{
+        padding-left: 10%;
+        max-width: 400px;
+     }
+    
+     .column2{
+        padding-left:10%;
+        max-width: 400px;
+     }
+    
+     .LasseOgMia h3{
+        margin: 4% 0 3% 0;
+     }
+    
+     .LasseOgMia h4{
+        font-size: 2vw;
+        font-family: var(--font-secondary);
+        margin: 2% 0 2% 0;
+        font-style: italic;
+     }
+    
+
+     /* tilmeldingssektion */
+
+     .tilmelding{
+        width: 50vw;
+        height:30vh;
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        align-items: center;
+        border-radius: 15px;
+        border: 4px solid var(--bg-accent);
+        padding: 0 10%;
+        gap: 5%;
+    }
+    
+
+     /* instagram sektion */
+     .kunBilleder{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-top: 1%;
+    }
+    
+    
+    .instaGrid{
+        display: grid;
+        grid-template-columns: auto auto auto auto auto;
+        max-width: 100%;
+        row-gap: 2%;
+        column-gap: 2%;
+        justify-content: center;
+    
+    }
+    
+    .grid-item{
+        border-radius: 15px;
+        padding: 2%;
+    }
+    
+    .instaGrid img{
+        max-width: 180px;
+    }
+
 }
