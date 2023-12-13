@@ -20,5 +20,21 @@ buttons.forEach((button) => {
   });
 });
 
+// det her er til burgeren :P //
 
 
+// Vælg elementer med klasserne 'hamburger' og 'mobile-nav'
+const menu_btn = document.querySelector('.hamburger');
+const mobile_menu = document.querySelector('.mobile-nav');
+
+// Tilføj en klik-eventlistener til 'hamburger'-elementet
+menu_btn.addEventListener('click', function(){
+    // Skift tilstanden af klassen 'is-active' på 'hamburger'-elementet
+    menu_btn.classList.toggle('is-active');
+    
+    // Skift tilstanden af klassen 'is-active' på 'mobile-nav'-elementet
+    mobile_menu.classList.toggle('is-active');
+});
+
+// Variabel til at gemme den nuværende sektion (den initialiseres som en tom streng)
+let currentSection = "";

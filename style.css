@@ -114,6 +114,7 @@ a {
   max-width: 300px;
 }
 
+
 /* -------------------------------- landing ------------------------------- */
 .landing {
   color: white;
@@ -516,7 +517,42 @@ footer {
 
   #mobilNav {
     display: block;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
   }
+
+
+/* ---------------- burger menu ----------------------------- */
+.hamburger{
+    display: block;
+    cursor: pointer;
+    margin-right: 5%;
+    width: 40px;
+    height: 40px;
+}
+.hamburger .bar, .hamburger:after, .hamburger:before{
+    content: "";
+    display: block;
+    width: 100%;
+    height: 4px;
+    margin: 10px 0px;
+    transition: 0.5s;
+    background-color: var(--bg-accent);
+}
+.hamburger.is-active:before {
+    /* Rotér top linjen 45 grader og vip den ned på hæjre side*/
+    transform: rotate(45deg) translate(10px, 9px);
+}
+
+.hamburger.is-active:after {
+    /* rotér bund linjen -45 grader og vip den op på hjøre side */
+    transform: rotate(-45deg) translate(9px, -10px);
+}
+.hamburger.is-active .bar{
+    opacity: 0;
+}
 
   .knap1,
   .knap2,
@@ -723,6 +759,10 @@ footer {
     align-items: center;
     padding: 0 5%;
   }
+
+  .hamburger{
+    display: none;
+}
 
   .knap1,
   .knap2,
