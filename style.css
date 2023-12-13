@@ -14,7 +14,7 @@ så vi nemt kan ændre uden at skal rode efter det hele*/
     --font-size-primary: 3vw;
     /* --font-size-secondary:  1.2vw;  */
     --font-primary: 'montserrat', sans-serif;
-    --font-secondary: 'Gilda Display', serif;
+    --font-secondary: 'Playfair Display', serif;
     --text-primary: #ffffff ;
     --text-secondary:#000000 ;
     --bg-primary: #000000;
@@ -29,6 +29,11 @@ body{
     margin:0;
    }
 
+
+   /* så scrollbaren ikke er synlig 
+   body::-webkit-scrollbar{
+    display: none; 
+  } */
 
 h1{
     font-family: 'montserrat', sans-serif;
@@ -55,6 +60,7 @@ h4{
     font-family: var(--font-secondary);
     color: var(--text-primary);
     font-size: 3vw;
+    font-weight: lighter;
 }
 
 p{
@@ -401,6 +407,7 @@ video{
 .gamleElever{
     background-color: #000f14;
     width: 100%;
+    padding-top: 0.5%;
 }
 
 .elevContainer{
@@ -418,19 +425,30 @@ video{
 
 .LasseOgMia img{
     border-radius: 15px;
-    border: 4px solid var(--bg-accent);
-    /*outline-offset: 15px; Midlertidig løsning*/
-    position: relative;
 }
 
-.LasseOgMia img:before{
-    position: absolute;
-    content: '';
-    left: -30px;
-    top: -30px;
-    height: 100%;
+ .column1{
+    padding-left: 10%;
+    max-width: 400px;
+ }
 
-}
+ .column2{
+    padding-top: 15%;
+    max-width: 480px;
+ }
+
+ .LasseOgMia h3{
+    margin: 4% 0 3% 0;
+ }
+
+ .LasseOgMia h4{
+    font-size: 2vw;
+    font-family: var(--font-secondary);
+    margin: 2% 0 2% 0;
+    font-style: italic;
+ }
+
+
 
 /* ---------------- Tilmeldings sektion --------- */
 
@@ -463,23 +481,130 @@ video{
 
 .instaContainer{
  height: auto;
+ text-align: center;
+}
+
+.instaContainer h2{
+    margin-bottom: 2%;
+}
+
+.kunBilleder{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 1%;
 }
 
 
 .instaGrid{
     display: grid;
     grid-template-columns: auto auto auto auto auto;
-    /*padding: 2%;*/
     max-width: 100%;
+    row-gap: 2%;
+    column-gap: 2%;
+    justify-content: center;
 
 }
 
 .grid-item{
     border-radius: 15px;
     padding: 2%;
-    max-width: 200px;
 }
 
+.instaGrid img{
+    max-width: 180px;
+}
+
+
+
+/* button stuff hvis vi vil bruge det 
+
+.btn{
+    padding: 10px 25px;
+    border: 2px solid #f39c12;
+    border-radius: 5px;
+    color: #f39c12;
+    text-decoration: none;
+    margin: 30px 0;
+    transition: all .5s ease;
+    font-weight: 600;
+}
+.btn:hover{
+    background-color: #f39c12;
+    color: #333;
+}
+.btn1{
+    margin-right: 15px;
+    background-color: #f39c12;
+    color: #000;
+}
+.btn1:hover{
+    background-color: transparent;
+    color: #f39c12;
+}
+
+*/
+
+
+/* ---------------------------- footer ---------------------- */
+
+footer{
+    margin-top: 5%;
+    background-color: #000f14;
+}
+
+.footerLogo{
+    margin-left: 10.5%;
+}
+
+.footerContainer{
+    display: flex;
+    width: 100%;
+    justify-content: space-around;
+}
+
+.venstreSide{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    line-height: 2;
+    border-left: 3px solid var(--bg-accent);
+    padding-left: 3%;
+    max-height: 550px;
+    margin-top: 2%;
+    padding-bottom: 3%;
+}
+
+.venstreSide .knap1{
+    max-width: 140px;
+    text-align: center;
+    font-weight: bold;
+    padding: 2% 2%;
+}
+
+.venstreSide a img{
+    width: 40px;
+    height: auto;
+    margin-right: 2%;
+}
+
+.textContainer h3{
+    margin: 4% 0 1% 0;    
+}
+
+
+.højreSide{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    line-height: 2;
+}
+
+
+.højreside iframe{
+    border-radius: 15px;
+    margin: 2% 0;
+}
 /*----------------------------------------Mobil---------------------------------*/
 
 @media screen and (max-width: 780px) {
