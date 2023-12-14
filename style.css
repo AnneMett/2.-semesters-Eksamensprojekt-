@@ -507,6 +507,118 @@ footer {
   padding-left: 20px;
 }
 
+/* ---------------- Tilmeldingsblanket undersider ------------ */
+#blanketinfo{
+  display: flex;
+  flex-direction: column;
+}
+
+#blanketinfo h2{
+  margin: 0;
+}
+
+#blanketinfo p{
+  text-align: center;
+  margin: 1% 0 2% 0;
+}
+
+.etKortIMidten{
+  display: flex;
+  justify-content: center;
+  margin: 0 0 5% 0;
+}
+
+form{
+  background-color: #000f14;
+  border-radius: 15px;
+  width: 65%;
+  padding: 5%;
+}
+
+.gul{
+  color: var(--bg-accent);
+}
+
+form h6{
+  font-family: var(--font-secondary);
+  color: var(--text-primary);
+  font-size: 1.5vw;
+  font-weight: 400;
+  margin: 4% 0 1% 0;
+}
+
+label{
+  color: var(--text-primary);
+  font-family: var(--font-primary);
+  
+}
+
+form .textLabel{ /*margin virker ikke*/
+  font-family: var(--font-secondary);
+  color: var(--text-primary);
+  font-size: 1.5vw;
+  margin: 4% 0 1% 0;
+}
+
+ul li{
+  list-style: none;
+  margin-bottom: 1%;
+  color: #ffffff;
+  font-family: var(--font-primary);
+}
+
+.tekstinput{
+  background-color: #000f14;
+  border-radius: 15px;
+  border: #fba808 solid 3px;
+  font-family: var(--font-primary);
+  font-weight: bold;
+  color: var(--text-primary);
+  padding: 1.2%;
+  width: 90%;
+}
+
+.kortmbgfarve{
+  background-color: #fba808;
+  border-radius: 15px;
+  width: 65%;
+  padding: 5%;
+}
+
+#programli{
+  margin-left: 5%;
+}
+
+#programli li{
+  list-style-type: disc;
+}
+
+#laesMereKort{
+  background-image: url(images/læsmeregruppebillede.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  border-radius: 15px;
+  width: 52%;
+  height: 450px;
+}
+
+#laesMereOverlay{
+  background-color: rgba(0, 0, 0, 0.5);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  height: 100%;
+  padding: 5%;
+}
+
+#laesMereOverlay h3{
+  font-size: 2.5vw;
+}
+
+#laesMereOverlay p{
+  font-size: 1vw;
+}
+
 /*----------------------------------------Mobil---------------------------------*/
 
 @media screen and (max-width: 780px) {
