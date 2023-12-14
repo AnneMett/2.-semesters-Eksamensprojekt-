@@ -496,12 +496,72 @@ footer {
   margin: 2% 0;
 }
 
-/* ---------------- billedkunst underide ------------ */
+/* ---------------- billedkunst underside ------------ */
 
 #kunstTitel {
   border-left: 4px solid var(--bg-accent);
   padding-left: 20px;
 }
+
+/* ---- kunst grid med kort ---- */ 
+
+.fagContainer img{
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.fagContainer h2{
+  margin-bottom: 2%;
+}
+
+.fagContainer h3{
+  font-size: 1vw;
+}
+
+.fagContainer{
+  width: 100%;
+  height: auto;
+}
+
+.fagGrid{
+  display: grid;
+  grid-template-columns: auto auto auto auto auto; 
+  justify-content: center;
+  gap: 4% 1%;
+  margin: 2% 0;
+}
+
+.kunstKort{
+  width: 200px;
+  height: 200px;
+  background-color: aqua;
+  border-radius: 15px;
+}
+
+.kunstKort > .linjefagKort{
+  width: auto;
+  padding:0;
+}
+
+
+/*  unorganiseret liste style */
+
+
+/* hover eller klik og lyt på elevkort */
+
+.elev1{ /*temp photo */
+  background-image: url(images/lasse.jpg);
+}
+
+.elev2{ /*temp photo */
+  background-image: url(images/mia.jpg);
+}
+
+
+
+
+
 
 /*----------------------------------------Mobil---------------------------------*/
 

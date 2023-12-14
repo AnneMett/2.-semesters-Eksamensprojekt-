@@ -38,3 +38,56 @@ menu_btn.addEventListener('click', function(){
 
 // Variabel til at gemme den nuværende sektion (den initialiseres som en tom streng)
 let currentSection = "";
+
+
+
+
+
+// ------- det her er til billedkunst med de to elever man kan hover på //
+// men det virker ikke og mit hoved er ved at explodere T^T //
+
+document.addEventListener("DOMContentLoaded", function() {
+
+
+// her er til den første elev
+// først en variable med lydfilen
+const audio1 = new Audio('comic5-25269.mp3'); 
+// så en som henter info om hvilket div der skal lyd til 
+const divElement1 = document.getElementById("#kunstElevEn");
+
+
+// en funktion som siger at når musen er i diven skal lyden afspilles
+    divElement1.addEventListener("mouseenter", function() {
+        audio1.play();
+    });
+
+
+// og en funktion som siger hvis musen forlader diven skal lyden stoppes
+    divElement1.addEventListener("mouseleave", function() {
+        audio1.pause();
+        audio1.currentTime = 0; /* her gør vi så lyden starter fra begyndelsen,
+        hver gang musen kommer ind på billedet */
+    });
+
+/* her er til den næste elev - vi gør bare det samme som ovenover,
+men variablerne audio1 og divElement1 bliver til audio2 etc. */
+
+
+const audio2 = new Audio('comic5-25269.mp3'); 
+const divElement2 = document.getElementById("#kunstElevTo");
+
+
+// en funktion som siger at når musen er i diven skal lyden afspilles
+    divElement2.addEventListener("mouseenter", function() {
+        audio2.play();
+    });
+
+
+// og en funktion som siger hvis musen forlader diven skal lyden stoppes
+    divElement2.addEventListener("mouseleave", function() {
+        audio2.pause();
+        audio2.currentTime = 0; 
+    });
+
+
+  });
