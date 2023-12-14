@@ -773,8 +773,12 @@ footer {
     box-shadow: 0px 2px 0px var(--bg-accent);
   }
 
-  #laptopNav .knap1:hover{
-    transition: 0.6s;
+  #laptopNav a:first-child:hover{
+    transform: none;
+    box-shadow: none!important;
+  }
+
+  #laptopNav a:last-child:hover{
     transform: none;
     box-shadow: none!important;
   }
