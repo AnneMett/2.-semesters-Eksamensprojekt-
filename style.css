@@ -511,18 +511,23 @@ footer {
 #blanketinfo{
   display: flex;
   flex-direction: column;
+  margin-top: 2%;
 }
 
 #blanketinfo h2{
-  margin: 0;
+  margin: auto;
+  padding: 0 2%;
 }
 
 #blanketinfo p{
   text-align: center;
-  margin: 1% 0 2% 0;
+  margin: 1% 17% 2% 17%;
+
 }
 
 .etKortIMidten{
+  width: 100%;
+  height: auto;
   display: flex;
   justify-content: center;
   margin: 0 0 5% 0;
@@ -576,6 +581,7 @@ ul li{
   color: var(--text-primary);
   padding: 1.2%;
   width: 90%;
+  margin: 1% 0 3% 0;
 }
 
 .kortmbgfarve{
@@ -617,6 +623,12 @@ ul li{
 
 #laesMereOverlay p{
   font-size: 1vw;
+}
+
+#laesMereOverlay .knap2{
+  text-align: center;
+  margin: 2% auto;
+  padding: 2% 4%;
 }
 
 /*----------------------------------------Mobil---------------------------------*/
@@ -873,7 +885,7 @@ ul li{
   }
 
   p {
-    font-size: 2vw;
+    font-size: 1.5vw;
   }
 
   .centerKnap .knap1 {
