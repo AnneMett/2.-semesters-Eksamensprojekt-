@@ -1,6 +1,6 @@
 
-// ref video: https://www.youtube.com/watch?v=9HcxHDS2w1s 
-// tyvstjålet lol
+/* *************references *******************
+ video: https://www.youtube.com/watch?v=9HcxHDS2w1s  */
 
 
 const buttons = document.querySelectorAll("[data-carousel-button]");
@@ -20,8 +20,14 @@ buttons.forEach((button) => {
   });
 });
 
+
+
+
 // det her er til burgeren :P //
 
+/* ******* references  ************
+JavaScript 1 - ANKT - 23-08-2023
+og Nippon UX / UI gruppeprojekt */
 
 // Vælg elementer med klasserne 'hamburger' og 'mobile-nav'
 const menu_btn = document.querySelector('.hamburger');
@@ -45,6 +51,9 @@ let currentSection = "";
 
 // ------- det her er til billedkunst med de to elever man kan hover på //
 // men det virker ikke og mit hoved er ved at explodere T^T //
+
+/* ******* references  ************
+Programmering 8: - ANKT - 25-10-2023 + det kode vi øvede den dag */
 
 document.addEventListener("DOMContentLoaded", function() {
 
