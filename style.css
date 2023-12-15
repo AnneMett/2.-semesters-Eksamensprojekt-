@@ -59,6 +59,7 @@ h4 {
   font-weight: lighter;
 }
 
+
 p {
   font-family: var(--font-primary);
   color: var(--text-primary);
@@ -765,12 +766,50 @@ ul li{
   background-color: var(--bg-secondary);
 }
 
+.mobile-nav > div{
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+  text-align: left;
+}
+
+
 .mobile-nav a{
   color: var(--text-primary);
   font-family: var(--font-primary);
   font-weight: bold;
-
+  font-size: 12pt;
 }
+
+
+/* til accordian-delen af burger menu */
+.accordion {
+  cursor: pointer;
+  margin: auto;
+  width: 100%;
+  text-align: left;
+  transition: 0.4s;
+  background-color: hsla(0, 0%, 0%, 0); /* gør den gennemsigtig */
+  border:none;
+
+  /* og til texten */
+  text-align: center;
+  color: var(--text-primary);
+  font-family: var(--font-primary);
+  font-weight: bold;
+  font-size: 12pt;
+}
+
+
+.panel {
+  padding: 0 18px;
+  display: none;
+  overflow: hidden;
+}
+
+
+/* knapper og basics som headings*/
 
   .knap1,
   .knap2,
@@ -1051,6 +1090,7 @@ ul li{
   overflow: auto;
   border: var(--bg-accent);
   z-index: 1;
+  border-radius: 15px;
 }
 
 .dropdown-content.show {

@@ -38,9 +38,14 @@
     <div class="dropdown">
       <button onclick="toggleDropdown('omSkolenDropdown')" class="dropbtn">Om skolen</button>
       <div id="omSkolenDropdown" class="dropdown-content">
-          <a href="#">Sublink 1</a>
-          <a href="#">Sublink 2</a>
-       
+          <a href="#">Bestyrelse & skolekred</a>
+          <a href="#">Værdigrundlag</a>
+          <a href="#">Medarbejdere</a>
+          <a href="#">Lovpligtdig dokumentation</a>
+          <a href="#">Gamle elever forening</a>
+          <a href="#">Årsplan</a>
+          <a href="#">Ledige pladser</a>
+          <a href="#">Pris</a>
       </div>
   </div>
 
@@ -48,9 +53,11 @@
     <div class="dropdown">
       <button onclick="toggleDropdown('linjefagDropdown')" class="dropbtn">Linjefag</button>
       <div id="linjefagDropdown" class="dropdown-content">
-          <a href="#">Sublink 1</a>
-          <a href="#">Sublink 2</a>
-        
+          <a href="Billedkunst.html">Billedkunst</a>
+          <a href="#">Drama</a>
+          <a href="#">E-sport</a>
+          <a href="#">Musik</a>
+          <a href="#">Sport</a>
       </div>
   </div>
 
@@ -58,19 +65,25 @@
     <div class="dropdown">
       <button onclick="toggleDropdown('undervisningDropdown')" class="dropbtn">Undervisning</button>
       <div id="undervisningDropdown" class="dropdown-content">
-          <a href="#">Sublink 1</a>
-          <a href="#">Sublink 2</a>
-          
+          <a href="#">9. klasse</a>
+          <a href="#">10. klasse</a>
+          <a href="#">Prøvefri 10. klasse</a>
+          <a href="#">Studievejledning</a>
+          <a href="#">Musik og teaterforestilling</a>
+          <a href="#">Rejser</a>
+          <a href="#">Elever fra Grønland & Færøerne</a>
+          <a href="#">Dansk som andet sprog</a>
       </div>
   </div>
 
-     <!-- Dropdown til "Livet på skolen" -->
+     <!-- Dropdown til "Livet på Ådalen" -->
      <div class="dropdown">
-      <button onclick="toggleDropdown('livetPaSkolenDropdown')" class="dropbtn">Livet på skolen</button>
+      <button onclick="toggleDropdown('livetPaSkolenDropdown')" class="dropbtn">Livet på Ådalen</button>
       <div id="livetPaSkolenDropdown" class="dropdown-content">
-          <a href="#">Sublink 1</a>
-          <a href="#">Sublink 2</a>
-        
+          <a href="#">Sund mad</a>
+          <a href="#">Medindflydelse</a>
+          <a href="#">Hverdagen</a>
+          <a href="#">Inklusion</a>
       </div>
   </div>
 
@@ -88,12 +101,52 @@
     </nav>
   </header>
   <nav class="mobile-nav">
-    <a href="index.html">Forside</a>
-    <a href="#">Om skolen</a>
-    <a href="Billedkunst.html">Linjefag</a>
-    <a href="#">Undervisning</a>
-    <a href="#">Livet på Skolen</a>
-    <a href="#" class="knap1">Besøg skolen</a>
+
+  
+    <button class="accordion">Om skolen</button>
+  <div class="panel">
+        <a href="#">Bestyrelse & skolekred</a>
+        <a href="#">Medarbejdere</a>
+        <a href="#">Lovpligtdig dokumentation</a>
+        <a href="#">Gamle elever forening</a>
+        <a href="#">Årsplan</a>
+        <a href="#">Ledige pladser</a>
+        <a href="#">Pris</a>
+    </div>
+
+
+    <button class="accordion">Linjefag</button>
+  <div class="panel">
+        <a href="Billedkunst.html">Billedkunst</a>
+        <a href="#">Drama</a>
+        <a href="#">E-sport</a>
+        <a href="#">Musik</a>
+        <a href="#">Sport</a>
+    </div>
+
+    <button class="accordion">Undervisning</button>
+    <div class="panel">
+        <a href="#">9. klasse</a>
+        <a href="#">10. klasse</a>
+        <a href="#">Prøvefri 10. klasse</a>
+        <a href="#">Studievejledning</a>
+        <a href="#">Musik og teaterforestilling</a>
+        <a href="#">Rejser</a>
+        <a href="#">Elever fra Grønland & Færøerne</a>
+        <a href="#">Dansk som andet sprog</a>
+    </div>
+      
+      
+    <button class="accordion">Livet på Ådalen</button>
+    <div class="panel">
+        <a href="#">Sund mad</a>
+        <a href="#">Medindflydelse</a>
+        <a href="#">Hverdagen</a>
+        <a href="#">Inklusion</a>
+    </div>
+
+       <a href="#" class="knap1">Besøg skolen</a>
+  
 
 </nav>
 

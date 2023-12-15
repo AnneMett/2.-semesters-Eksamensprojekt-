@@ -60,38 +60,80 @@
      }
  });
  
- 
- 
- 
- 
+
+
+/* og til accordian funktionen inden i burgeren 
+**** references *******
+w3schools: https://www.w3schools.com/howto/howto_js_accordion.asp 
+og ?? */
+// vælg alle elements med class "accordion"
+var acc = document.getElementsByClassName("accordion");
+var i;
+
+// vælg alle elements med class "accordion"
+var acc = document.getElementsByClassName("accordion");
+var i;
+
+// tilføj en click event listener til hvert accordion element
+for (i = 0; i < acc.length; i++) {
+  acc[i].addEventListener("click", function () {
+    // skift til "active" class
+    this.classList.toggle("active");
+
+    // hent det næste sibling element (den næste i rækken)
+    var panel = this.nextElementSibling;
+
+    // Toggle the display of the panel
+    if (panel.style.display === "block" || panel.style.display === "") {
+      panel.style.display = "none";
+    } else {
+      panel.style.display = "block";
+    }
+  });
+
+  // Skjul panelet ved start
+  acc[i].nextElementSibling.style.display = "none";
+}
+
+
  
  /* ------- det her er til drop down --------------- 
  *************** references ***************
  w3schools: https://www.w3schools.com/howto/howto_js_dropdown.asp 
  */
  
-   // Function to toggle dropdown visibility
-     function toggleDropdown(dropdownId) {
-         var dropdown = document.getElementById(dropdownId);
-         if (dropdown) {
-             dropdown.classList.toggle("show");
-         }
-     }
- 
-     // Close the dropdown if the user clicks outside of it
-     window.onclick = function(event) {
-         if (!event.target.matches('.dropbtn')) {
-             var dropdowns = document.getElementsByClassName("dropdown-content");
-             var i;
-             for (i = 0; i < dropdowns.length; i++) {
-                 var openDropdown = dropdowns[i];
-                 if (openDropdown.classList.contains('show')) {
-                     openDropdown.classList.remove('show');
-                 }
-             }
-         }
-     }
- 
+  // Function to toggle dropdown visibility
+function toggleDropdown(dropdownId) {
+    var dropdown = document.getElementById(dropdownId);
+    var allDropdowns = document.getElementsByClassName("dropdown-content");
+
+    // Close all other dropdowns
+    for (var i = 0; i < allDropdowns.length; i++) {
+        var otherDropdown = allDropdowns[i];
+        if (otherDropdown.id !== dropdownId && otherDropdown.classList.contains('show')) {
+            otherDropdown.classList.remove('show');
+        }
+    }
+
+    // Toggle the clicked dropdown
+    if (dropdown) {
+        dropdown.classList.toggle("show");
+    }
+}
+
+// Close the dropdown if the user clicks outside of it
+window.onclick = function(event) {
+    if (!event.target.matches('.dropbtn')) {
+        var dropdowns = document.getElementsByClassName("dropdown-content");
+        var i;
+        for (i = 0; i < dropdowns.length; i++) {
+            var openDropdown = dropdowns[i];
+            if (openDropdown.classList.contains('show')) {
+                openDropdown.classList.remove('show');
+            }
+        }
+    }
+}
  
  
  
