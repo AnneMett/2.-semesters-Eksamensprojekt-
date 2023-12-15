@@ -475,12 +475,13 @@ footer a{
   border-left: 3px solid var(--bg-accent);
   padding-left: 3%;
   max-height: 550px;
+  max-width: 500px;
   margin-top: 2%;
   padding-bottom: 3%;
 }
 
 .venstreSide .knap1 {
-  max-width: 140px;
+  max-width: 50%;
   text-align: center;
   font-weight: bold;
   padding: 2% 2%;
@@ -507,11 +508,18 @@ footer a{
 .højreside iframe {
   border-radius: 15px;
   margin: 2% 0; 
-  max-width: 300px;
-  height: auto;
+  max-width: 500px;
+  height: 500px;
 }
 
-/* ---------------- billedkunst underside ------------ */
+/* ---------------- billedkunst underside --------------
+ ************** stadig under opbygning! ***********  */
+
+#opmærksom{
+  height: 300px;
+  color: var(--bg-accent);
+
+}
 
 #kunstTitel {
   border-left: 4px solid var(--bg-accent);
@@ -885,7 +893,6 @@ ul li{
   }
 
   /* instagram sektion */
-
   .kunBilleder {
     display: flex;
     justify-content: center;
@@ -1032,6 +1039,17 @@ ul li{
   .instaGrid img {
     max-width: 100px;
   }
+
+  /* footer */
+
+  
+.højreside iframe {
+  border-radius: 15px;
+  margin: 2% 0; 
+  max-width: 250px;
+  height: 250px;
+}
+
 
   /* ******** billedkunst underside ******** */
   #kunstTitel {
@@ -1289,6 +1307,7 @@ ul li{
   #kunstTitel {
     font-size: 4vw;
   }
+
 
   footer a:hover{
     transition: 0.3s;
