@@ -784,7 +784,7 @@ ul li{
   margin: 1% 0;
 }
 
-.mobile.nav < .knap1{
+.mobile.nav .knap1{
   border: none;
 }
 
