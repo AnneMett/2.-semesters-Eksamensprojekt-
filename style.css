@@ -66,7 +66,6 @@ p {
 
 a {
   font-family: var(--font-primary);
-  color: var(--text-primary);
   text-decoration: none;
 }
 
@@ -105,15 +104,21 @@ a {
 
 #laptopNav a {
   text-decoration: none;
-  color: white;
-  font-weight: bold;
-  font-size: 1.2vw;
+
 }
 
 #logo {
   height: auto;
   width: 100%;
   max-width: 300px;
+}
+
+.mobile-nav {
+  display: none;
+}
+
+.mobile-nav.is-active {
+  display: flex;
 }
 
 /* -------------------------------- landing ------------------------------- */
@@ -702,12 +707,15 @@ ul li{
   }
 
   #mobilNav {
-    display: block;
+    display: block; 
     display: flex;
     flex-direction: row;
     align-items: center;
     justify-content: space-between;
   }
+
+
+  
 
 
 /* ---------------- burger menu ----------------------------- */
@@ -738,6 +746,30 @@ ul li{
 }
 .hamburger.is-active .bar{
     opacity: 0;
+}
+
+.mobile-nav{
+  display: none;
+
+}
+.mobile-nav.is-active{
+  left: 0;
+  flex-direction: column;
+  align-items: center;
+  position: fixed;
+  width: 100%;
+  min-height: 100vh;
+  padding-top: 20%;
+  transition: 0.5s; 
+  z-index: 5;
+  background-color: var(--bg-secondary);
+}
+
+.mobile-nav a{
+  color: var(--text-primary);
+  font-family: var(--font-primary);
+  font-weight: bold;
+
 }
 
   .knap1,
@@ -846,6 +878,7 @@ ul li{
   footer {
     margin: 0 2% 2% 2%;
   }
+  
   /* gamle elev sektion */
   .elevContainer {
     display: flex;
@@ -961,6 +994,10 @@ ul li{
     display: none;
   }
 
+  .mobile-nav {
+    display: none;
+  }
+
   #laptopNav {
     font-family: "montserrat", sans-serif;
     display: flex;
@@ -980,22 +1017,67 @@ ul li{
     border-radius: 15px;
   }
 
- /* hover virker også på knapperne T-T øv */
- #laptopNav a:hover {
+/* ----------------- drop down-----------------
+**** ref: w3schools *** */
+.dropbtn {
+  background-color: var(--bg-primary);
+  color: var(--text-primary);
+  font-family: var(--font-primary);
+  font-weight: bold;
+  font-size: 1.2vw;
+  padding: 16px;
+  border: none;
+  cursor: pointer;
+}
+
+
+.dropbtn:hover, .dropbtn:focus {
   transition: 0.3s;
   transform: scale(1.1);
-  box-shadow: 0px 2px 0px var(--bg-accent);
+  color: var(--bg-accent);
+  
 }
 
-#laptopNav a:first-child:hover{
-  transform: none;
-  box-shadow: none!important;
+.dropdown {
+  position: relative;
+  display: inline-block;
 }
 
-#laptopNav a:last-child:hover{
-  transform: none;
-  box-shadow: none!important;
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #000000;
+  min-width: 160px;
+  overflow: auto;
+  border: var(--bg-accent);
+  z-index: 1;
 }
+
+.dropdown-content.show {
+  display: block;
+  opacity: 1;
+}
+
+.dropdown-content a {
+  color: rgb(255, 255, 255);
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+}
+
+.dropdown-content a:hover{
+  color: var(--bg-accent);
+  background-color: var(--bg-secondary);
+}
+
+
+
+.show {
+  display: block;
+}
+
+
+/* ------------ hover effekter ------------ */
 
 #readmore:hover {
   transition: 3s;

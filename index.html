@@ -27,26 +27,75 @@
 
 <body>
   <header>
-    <!-- ********** nav bar til laptop **************** -->
+    <!-- ********** nav bar til laptop med dropdown *************
+     ******* ref: w3schools ****** -->
     <nav id="laptopNav">
       <img id="logo" src="images/logo-stor-1.svg" alt="Logo">
       <img src="images/Line-5.png" alt="Linje">
-      <a href="#">Om skolen</a>
-      <a href="#">Linjefag</a>
-      <a href="tilmeldbesoegsdag.html">Undervisning</a>
-      <a href="#">Livet på skolen</a>
-      <a href="#" class="knap1">Besøg skolen</a>
+
+
+       <!-- Dropdown til "Om skolen" -->
+    <div class="dropdown">
+      <button onclick="toggleDropdown('omSkolenDropdown')" class="dropbtn">Om skolen</button>
+      <div id="omSkolenDropdown" class="dropdown-content">
+          <a href="#">Sublink 1</a>
+          <a href="#">Sublink 2</a>
+       
+      </div>
+  </div>
+
+    <!-- Dropdown til "Linjefag" -->
+    <div class="dropdown">
+      <button onclick="toggleDropdown('linjefagDropdown')" class="dropbtn">Linjefag</button>
+      <div id="linjefagDropdown" class="dropdown-content">
+          <a href="#">Sublink 1</a>
+          <a href="#">Sublink 2</a>
+        
+      </div>
+  </div>
+
+    <!-- Dropdown til "Undervisning" -->
+    <div class="dropdown">
+      <button onclick="toggleDropdown('undervisningDropdown')" class="dropbtn">Undervisning</button>
+      <div id="undervisningDropdown" class="dropdown-content">
+          <a href="#">Sublink 1</a>
+          <a href="#">Sublink 2</a>
+          
+      </div>
+  </div>
+
+     <!-- Dropdown til "Livet på skolen" -->
+     <div class="dropdown">
+      <button onclick="toggleDropdown('livetPaSkolenDropdown')" class="dropbtn">Livet på skolen</button>
+      <div id="livetPaSkolenDropdown" class="dropdown-content">
+          <a href="#">Sublink 1</a>
+          <a href="#">Sublink 2</a>
+        
+      </div>
+  </div>
+
+          <a href="#" class="knap1">Besøg skolen</a>
     </nav>
 
     <nav id="mobilNav">
-      <!-- **************** nav bar til mobil ********* -->
+      <!-- **************** nav bar til mobil med burger *******
+        ref: ** -->
       <a href="index.html"><img src="images/logo-mobil.png" alt="Logo"></a>
       <div class="hamburger">
         <div class="bar">
-        </div>
+                  </div>
       </div>
     </nav>
   </header>
+  <nav class="mobile-nav">
+    <a href="index.html">Forside</a>
+    <a href="#">Om skolen</a>
+    <a href="Billedkunst.html">Linjefag</a>
+    <a href="#">Undervisning</a>
+    <a href="#">Livet på Skolen</a>
+    <a href="#" class="knap1">Besøg skolen</a>
+
+</nav>
 
   <main>
     <!-- *********landing med video og titel********* -->
