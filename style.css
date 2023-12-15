@@ -1,12 +1,10 @@
 * {
   margin: 0;
   padding: 0;
-}
-
-*::before,
-*::after {
   box-sizing: border-box;
 }
+
+
 /* Styletile men css basically - 
 så vi nemt kan ændre uden at skal rode efter det hele*/
 :root {
@@ -125,7 +123,7 @@ a {
 /* -------------------------------- landing ------------------------------- */
 .landing {
   color: white;
-  margin-left: 9.8%;
+  margin-left: 2%;
 }
 
 .landing p {
@@ -142,8 +140,9 @@ a {
 }
 
 video {
-  width: 80%;
+  width: 90%;
   border-radius: 15px;
+  margin:auto;
 }
 
 .brødtekst {
@@ -400,6 +399,7 @@ video {
 
 .tilmelding p {
   text-align: center;
+  margin: 2% 0;
 }
 
 .tilmelding .knap1 {
@@ -415,6 +415,10 @@ video {
 
 .instaContainer h2 {
   margin-bottom: 2%;
+}
+
+.instaContainer a{
+  color: var(--text-primary);
 }
 
 /* button stuff hvis vi vil bruge det 
@@ -452,10 +456,8 @@ footer {
   background-color: #000f14;
 }
 
-footer a:hover{
-  transition: 0.3s;
-  transform: scale(1.1);
-  box-shadow: 0px 2px 0px var(--bg-accent);
+footer a{
+  color: var(--text-primary);
 }
 
 .footerLogo {
@@ -502,11 +504,14 @@ footer a:hover{
   justify-content: space-around;
   flex-direction: column;
   line-height: 2;
+  margin-left: 2%;
 }
 
 .højreside iframe {
   border-radius: 15px;
-  margin: 2% 0;
+  margin: 2% 0; 
+  max-width: 300px;
+  height: auto;
 }
 
 /* ---------------- billedkunst underside ------------ */
@@ -775,10 +780,11 @@ ul li{
 
 
 .mobile-nav a{
-  color: var(--text-primary);
+  color: var(--bg-accent);
   font-family: var(--font-primary);
   font-weight: bold;
-  font-size: 12pt;
+  font-size: 10pt;
+  margin: 1% 0;
 }
 
 
@@ -803,6 +809,7 @@ ul li{
 
 .panel {
   display: flex;
+  display: block;
   flex-direction: column;
 }
 
@@ -916,6 +923,15 @@ ul li{
   footer {
     margin: 0 2% 2% 2%;
   }
+
+
+/* besøgskort */
+
+.besøgsKort {
+  height: 300px;
+  width: 300px;
+}
+
   
   /* gamle elev sektion */
   .elevContainer {
@@ -979,6 +995,7 @@ ul li{
 
   .tilmelding h4 {
     font-size: 20pt;
+    margin-bottom: 5%;
   }
 
   .tilmelding .knap1 {
@@ -1142,7 +1159,7 @@ ul li{
   }
 
   p {
-    font-size: 2vw;
+    font-size: 1.5vw;
   }
 
   .centerKnap .knap1 {
@@ -1223,8 +1240,9 @@ ul li{
   /* tilmeldingssektion */
 
   .tilmelding {
-    width: 50vw;
-    height: 30vh;
+    width: 80%;
+    height: auto;
+    padding: 2%;
     display: flex;
     justify-content: center;
     flex-direction: column;
@@ -1232,8 +1250,9 @@ ul li{
     border-radius: 15px;
     border: 4px solid var(--bg-accent);
     padding: 5% 10%;
-    gap: 5%;
   }
+
+
 
   /* instagram sektion */
   .kunBilleder {
@@ -1252,6 +1271,10 @@ ul li{
     justify-content: center;
   }
 
+  .instaContainer a:hover{
+    color: var(--bg-accent);
+  }
+
   .grid-item {
     border-radius: 15px;
     padding: 2%;
@@ -1264,5 +1287,11 @@ ul li{
   /* ****** Billedkunst underside **** */
   #kunstTitel {
     font-size: 4vw;
+  }
+
+  footer a:hover{
+    transition: 0.3s;
+    transform: scale(1.1);
+    box-shadow: 0px 2px 0px var(--bg-accent);
   }
 }

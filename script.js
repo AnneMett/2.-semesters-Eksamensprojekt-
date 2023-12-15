@@ -84,10 +84,10 @@ for (i = 0; i < acc.length; i++) {
     var panel = this.nextElementSibling;
 
     // Toggle the display of the panel
-    if (panel.style.display === "block" || panel.style.display === "") {
+    if (panel.style.display === "flex" || panel.style.display === "") {
       panel.style.display = "none";
     } else {
-      panel.style.display = "block";
+      panel.style.display = "flex";
     }
   });
 
