@@ -760,7 +760,6 @@ ul li{
   position: fixed;
   width: 100%;
   min-height: 100vh;
-  padding-top: 20%;
   transition: 0.5s; 
   z-index: 5;
   background-color: var(--bg-secondary);
@@ -786,7 +785,7 @@ ul li{
 /* til accordian-delen af burger menu */
 .accordion {
   cursor: pointer;
-  margin: auto;
+  margin: 2%;
   width: 100%;
   text-align: left;
   transition: 0.4s;
@@ -803,10 +802,10 @@ ul li{
 
 
 .panel {
-  padding: 0 18px;
-  display: none;
-  overflow: hidden;
+  display: flex;
+  flex-direction: column;
 }
+
 
 
 /* knapper og basics som headings*/

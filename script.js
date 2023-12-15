@@ -64,8 +64,8 @@
 
 /* og til accordian funktionen inden i burgeren 
 **** references *******
-w3schools: https://www.w3schools.com/howto/howto_js_accordion.asp 
-og ?? */
+w3schools: https://www.w3schools.com/howto/howto_js_accordion.asp */
+
 // vælg alle elements med class "accordion"
 var acc = document.getElementsByClassName("accordion");
 var i;
