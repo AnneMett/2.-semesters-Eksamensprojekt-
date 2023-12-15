@@ -511,7 +511,14 @@ footer a{
   height: auto;
 }
 
-/* ---------------- billedkunst underside ------------ */
+/* ---------------- billedkunst underside --------------
+ ************** stadig under opbygning! ***********  */
+
+#opmærksom{
+  height: 300px;
+  color: var(--bg-accent);
+
+}
 
 #kunstTitel {
   border-left: 4px solid var(--bg-accent);
@@ -885,7 +892,6 @@ ul li{
   }
 
   /* instagram sektion */
-
   .kunBilleder {
     display: flex;
     justify-content: center;
