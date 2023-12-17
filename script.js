@@ -70,10 +70,6 @@ w3schools: https://www.w3schools.com/howto/howto_js_accordion.asp */
 var acc = document.getElementsByClassName("accordion");
 var i;
 
-// vælg alle elements med class "accordion"
-var acc = document.getElementsByClassName("accordion");
-var i;
-
 // tilføj en click event listener til hvert accordion element
 for (i = 0; i < acc.length; i++) {
   acc[i].addEventListener("click", function () {
