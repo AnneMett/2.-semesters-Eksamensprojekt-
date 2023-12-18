@@ -257,18 +257,18 @@ video {
   width: 100%;
   height: auto;
   display: flex;
-  display: flex;
   justify-content: center;
   margin-top: 2%;
 }
 
+/*Styles fra YTvideo start*/
 .carousel {
-  width: 76vw;
-  height: 80vh;
+  width: 76vw; /*vores bredde*/
+  height: 80vh; /*vores højde*/
   position: relative;
 }
 
-.carousel > ul {
+.carousel > ul { /*fordi ul har default padding og margin*/
   margin: 0;
   padding: 0;
   list-style: none;
@@ -276,28 +276,28 @@ video {
 
 .slide {
   position: absolute;
-  inset: 0;
-  opacity: 0;
-  transition: 200ms opacity ease-in-out;
-  transition-delay: 200ms;
+  inset: 0; /*Så billederne ryger oven på hinanden*/
+  opacity: 0; /*For at gemme billederne der ikke er "active"*/
+  transition: 300ms opacity ease-in-out; /*Vi har sat transition til 300ms så effecten bliver tydeligere*/
+  transition-delay: 300ms; /*Den nye slide fader færdig til data-active, før den gamle forsvinder*/
 }
 
 .slide > img {
-  display: block;
-  width: 100%;
-  height: 100%;
+  display: block; 
+  width: 100%; /*100% bredde og højde så de udfylder .carousel*/
+  height: 100%; /**/
   object-fit: cover;
   object-position: center;
-  border-radius: 15px;
+  border-radius: 15px; /*vores*/
 }
-.slide[data-active] {
-  opacity: 1;
+.slide[data-active] { 
+  opacity: 1; /*transition ease mellem opacity 0 og 1*/
   transition-delay: 0;
-  z-index: 1;
+  z-index: 1; /*active slide dukker altid op øverst*/
 }
 
 .carousel-button {
-  position: absolute;
+  position: absolute; /*Så vi frit kan rykke dem*/
   z-index: 2;
   background: none;
   border: none;
@@ -306,28 +306,28 @@ video {
   transform: translateY(-50%);
   color: white;
   cursor: pointer;
-  border-radius: 0.25rem;
+  border-radius: 5px; /*Så hjørnerne passer med vores afrundinger*/
   padding: 0 0.5rem;
   background-color: rgba(0, 0, 0, 0.248);
 }
 
-.carousel-button:hover,
-.carousel-button:focus {
+.carousel-button:hover /*hover state så knapperne bliver mere brugervenlige*/ {
   color: white;
   background-color: rgba(0, 0, 0, 0.778);
 }
 
+/*
 .carousel-button:focus {
   outline: 1px solid black;
-}
+}*/
 
 .carousel-button.prev {
   left: 1rem;
 }
 
 .carousel-button.next {
-  right: 1rem;
-}
+  right: 1rem; /*Så knappen faktisk bliver rykket over til højre*/
+} /*Styles fra youtubevideo slut*/
 
 /* ----------------- efterskolernes aften og besøgsdag kort ------------ */
 

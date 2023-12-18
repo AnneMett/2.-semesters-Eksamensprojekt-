@@ -1,3 +1,4 @@
+<<<<<<< Updated upstream
 
 /* *** Det her er til blog billede karousellen **
 **********references *******************
@@ -193,3 +194,34 @@ window.onclick = function(event) {
  
    }); */
  
+=======
+
+// ref video: https://www.youtube.com/watch?v=9HcxHDS2w1s 
+
+const buttons = document.querySelectorAll("[data-carousel-button]");
+
+buttons.forEach((button) => { //forEach starter et loop over de to knapper0
+  button.addEventListener("click", () => { /*knappen reagere på klik */
+    const offset = button.dataset.carouselButton === "next" ? 1 : -1; /*Datasæt vælger begge buttons med dataattribute
+    Hvis nogle af carouselbuttons er lig med "next", så skal den give value 1 tilbage ellers skal den give value -1 tilbage for så står der prev(ious).*/
+
+    const slides = button.closest("[data-carousel]").querySelector('[data-slides]'); /*definere den tætteste parentelement fra knappen, som er en carousel
+    (Derfor har div'en i html fået data-carousel og slidesne har fået data-slides*/
+
+    const activeSlide = slides.querySelector("[data-active]"); //definere det første slide
+
+    let newIndex = [...slides.children].indexOf(activeSlide) + offset; /*variablen laver et nyt index for det næste slide ud fra, 
+    hvilket nummer i indekset, det allerede er på og om offset skal lægge en til eller fra*/
+
+    if (newIndex < 0) newIndex = slides.children.length - 1; /*Når man er på det første billede og trykker "tilbage" skifter den, til det sidste billede i html*/
+    if (newIndex >= slides.children.length) newIndex = 0; /*Når man skifter videre ved det sidste billede, går den tilbage til det første billede */
+
+    slides.children[newIndex].dataset.active = true /*Linjen tilføjer data-attributen til det næste slide i Arrayen*/
+    delete activeSlide.dataset.active /* Den her linje fjerner data-attributen fra det foregående slide*/
+    
+  });
+});
+
+
+
+>>>>>>> Stashed changes
